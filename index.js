@@ -44,7 +44,7 @@ app.set('view engine','.hbs')
 app.get('/', function (req, res) {
     res.render('login');
 });
-app.listen(2000);
+app.listen(process.env.PORT || 2000);
 
 app.get('/quanlysanpham', function (req, res) {
     res.render('quanlysanpham');
